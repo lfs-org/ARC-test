@@ -3,7 +3,7 @@ on: [workflow_dispatch]
 
 jobs:
   test-cluster-a:
-    runs-on: [test-zy-a,test-zy-b]
+    runs-on: arc-runner-set
     steps:
     - name: Check Cluster A
       run: |
@@ -15,7 +15,7 @@ jobs:
         free -h
         
   test-cluster-b:
-    runs-on: [test-zy-a,test-zy-b]
+    runs-on: arc-runner-set
     steps:
     - name: Check Cluster B
       run: |
@@ -27,7 +27,7 @@ jobs:
         free -h
         
   test-any-cluster:
-    runs-on: [test-zy-a,test-zy-b]
+    runs-on: arc-runner-set
     steps:
     - name: Check Any Available Runner
       run: |
