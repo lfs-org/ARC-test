@@ -22,7 +22,6 @@ jobs:
         echo "Running on Cluster B"
         echo "Hostname: $HOSTNAME"
         echo "Testing resource availability..."
-        sleep 360
         df -h
         free -h
         
