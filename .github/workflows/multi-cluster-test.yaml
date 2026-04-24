@@ -10,7 +10,6 @@ jobs:
         echo "Running on Cluster A"
         echo "Hostname: $HOSTNAME"
         echo "Testing resource availability..."
-        sleep 360
         df -h
         free -h
         
